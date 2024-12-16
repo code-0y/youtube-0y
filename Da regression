@@ -40,8 +40,7 @@ log_reg = LogisticRegression()
 log_reg.fit(X_iris, y_iris) 
 x_min, x_max = X_iris[:, 0].min() - 1, X_iris[:, 0].max() + 1 
 y_min, y_max = X_iris[:, 1].min() - 1, X_iris[:, 1].max() + 1 
-xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1), np.arange(y_min, y_max, 
-0.1)) 
+xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1), np.arange(y_min, y_max, 0.1)) 
 Z = log_reg.predict(np.c_[xx.ravel(), yy.ravel()]) 
 Z = Z.reshape(xx.shape) 
 plt.figure(figsize=(8, 6)) 
