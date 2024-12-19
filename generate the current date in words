@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Date Display</title>
+<h1> Date Display</h1>
+<body bgcolor="darkblue" text="white">
+<script type="text/javascript">
+var days= ["First","second","third","fourth","fifth","sixth","seventh","Eighth","Ninth","Tenth",
+ "Eleventh", "Twelfth",  "Thirteenth",  "Fourteenth", "Fifteenth", "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth","Twentyeth", "TwentyFirst", "TwentySecond", "TwentyThird", "TwentyFourth", "TwentyFifth",  "TwentySixth", "TwentySeventh", "TwentyEighth",              "TwentyNinth","Thirtyeth","ThirtyFirst"]; 
+var months= ["January","February","March","April","May","June","july","August","September", "October","November","December"]; 
+var year ="Two Thousand Twenty Four";  
+var dateObj=new Date();
+var currMonth=dateObj.getMonth();
+var currDate=dateObj.getDate(); 
+var currYear=dateObj.getFullYear();
+
+if(currYear==2024)
+  alert("Today's Date is:"+days[currDate-1]+" "+months[currMonth]+" "+year); 
+else
+ alert("Today's Date is:"+days[currDate-1]+" "+months[currMonth]+" "+currYear);
+document.write("Today Date is : " + days[currDate-1] +" "+months[currMonth]+" "+year); 
+document.write("<br/>"); 
+
+</script>
+</head> 
+</html>
