@@ -1,0 +1,24 @@
+<?php
+$daycolors=['Sunday'=>'red','Monday'=>'green','Tuesday'=>'pink', 
+'Wednesday'=> 'yellow','Thursday'=> 'maroon','Friday'=>'blue','Satruday'=> 'orange'];
+$currentDay=date('l');
+$backgroundColor='white';
+if (array_key_exists($currentDay,$daycolors))
+{
+  $backgroundColor=$daycolors[$currentDay];
+}
+?>
+<html>
+<head>
+<title> Background color change </title>
+<style>
+body
+{
+  background-color:<?php echo $backgroundColor;?>;
+}
+</style>
+</head>
+<body>
+<h1> Today color is </h1>
+</body>
+</html>
