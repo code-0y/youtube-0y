@@ -1,0 +1,23 @@
+import numpy import pandas import SciPy import sklearn
+import  matplotlib
+
+print("numpy library version is: ")
+print(numpy.  version  ) #please type two underscore symbols.
+print("numpy library is successfully installed")
+print(" ")
+
+print("pandas library version is: ") print(pandas. version )
+print("pandas’ library is successfully  installed")
+print(" ")
+
+print("SciPy library version is: ") 
+print(SciPy. version )
+print("SciPy library is successfully installed") 
+print(" ")
+
+print("matplotlib library version is: ) print(matplotlib. version )
+print("matplotlib library is successfully installed") print(" ")
+
+print("scikit-learn(sklearn) library version is: ") print(sklearn. version )
+print("sklearn library is successfully installed")
+ 
